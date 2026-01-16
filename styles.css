@@ -411,7 +411,7 @@ body::after {
 
 .card-theme {
     font-family: var(--font-body);
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-size: 1.6rem;
     font-style: italic;
     color: var(--crimson);
     margin-bottom: var(--spacing-lg);
@@ -504,7 +504,7 @@ body::after {
 .summary-text,
 .interpretation-text {
     font-family: var(--font-body);
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.8;
     color: var(--black);
@@ -544,7 +544,7 @@ body::after {
 
 .element-meaning {
     font-family: var(--font-body);
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: 1.3rem;
     font-weight: 500;
     color: var(--black);
     line-height: 1.8;
@@ -575,7 +575,8 @@ body::after {
 
 .about-text {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
     line-height: 1.8;
     color: var(--cream);
     opacity: 0.85;
