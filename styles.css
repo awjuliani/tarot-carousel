@@ -1,0 +1,747 @@
+/* ========================================
+   Meditations on the Tarot - Styles
+   ======================================== */
+
+:root {
+    /* Color Palette */
+    --midnight-blue: #0a1628;
+    --deep-blue: #0f2847;
+    --royal-blue: #1a3a5c;
+    --gold: #d4af37;
+    --gold-light: #e8c874;
+    --gold-dark: #b8962e;
+    --crimson: #8b1a1a;
+    --crimson-light: #a62c2c;
+    --cream: #f5f0e6;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Typography */
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --font-ui: 'Raleway', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+    --transition-slow: 0.6s ease;
+
+    /* Card dimensions */
+    --card-width: 280px;
+    --card-height: 484px;
+}
+
+/* ========================================
+   Reset & Base
+   ======================================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-color: var(--midnight-blue);
+}
+
+body {
+    font-family: var(--font-body);
+    background: linear-gradient(180deg, var(--midnight-blue) 0%, var(--deep-blue) 50%, var(--midnight-blue) 100%);
+    color: var(--cream);
+    min-height: 100vh;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Subtle star pattern overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, var(--gold), transparent),
+        radial-gradient(1px 1px at 40px 70px, var(--cream), transparent),
+        radial-gradient(1px 1px at 50px 160px, var(--gold), transparent),
+        radial-gradient(1px 1px at 90px 40px, var(--cream), transparent),
+        radial-gradient(1px 1px at 130px 80px, var(--gold), transparent),
+        radial-gradient(1px 1px at 160px 120px, var(--cream), transparent),
+        radial-gradient(1px 1px at 200px 50px, var(--gold), transparent),
+        radial-gradient(1px 1px at 250px 90px, var(--cream), transparent),
+        radial-gradient(1px 1px at 300px 140px, var(--gold), transparent);
+    background-size: 350px 200px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Edge fade gradients - full viewport height */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(to right, var(--midnight-blue) 0%, var(--midnight-blue) 15%, transparent 40%),
+        linear-gradient(to left, var(--midnight-blue) 0%, var(--midnight-blue) 15%, transparent 40%);
+    pointer-events: none;
+    z-index: 4;
+}
+
+/* ========================================
+   Container
+   ======================================== */
+
+.container {
+    position: relative;
+    z-index: 10;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+.header {
+    display: none;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 600;
+    color: var(--white);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-xs);
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--crimson), var(--gold), var(--crimson), transparent);
+    margin: var(--spacing-sm) auto 0;
+}
+
+.subtitle {
+    font-family: var(--font-ui);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 300;
+    color: var(--gold-light);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   Carousel
+   ======================================== */
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg) 0 0 0;
+    /* Break out of parent container to span full viewport */
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1200px;
+    height: calc(var(--card-height) + 40px);
+    overflow: visible;
+    position: relative;
+    perspective: 1800px;
+    perspective-origin: 50% 40%;
+}
+
+/* Initial load animation */
+.carousel:not(.loaded) .carousel-card {
+    opacity: 0 !important;
+    transform: translateY(50px) translateZ(-300px) scale(0.8) !important;
+}
+
+.carousel.loaded .carousel-card {
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.8s ease;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+.carousel-card {
+    position: absolute;
+    width: var(--card-width);
+    height: var(--card-height);
+    cursor: grab;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 3px solid var(--gold-dark);
+    transition: box-shadow var(--transition-medium),
+                border-color var(--transition-medium);
+    /* Prevent image dragging */
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+    backface-visibility: hidden;
+}
+
+.carousel-card.active img {
+    border-color: var(--gold);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.6),
+        0 15px 30px rgba(0, 0, 0, 0.4),
+        0 0 50px rgba(212, 175, 55, 0.3),
+        0 0 80px rgba(139, 26, 26, 0.2);
+}
+
+.carousel-card:hover:not(.active) img {
+    border-color: var(--crimson-light);
+}
+
+/* Reflection effect */
+.carousel-card::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background: linear-gradient(
+        to bottom,
+        rgba(212, 175, 55, 0.1) 0%,
+        transparent 50%
+    );
+    transform: scaleY(-1) translateY(-10px);
+    opacity: 0.3;
+    pointer-events: none;
+    border-radius: 10px;
+    filter: blur(2px);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 60%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 60%);
+}
+
+/* Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    color: var(--white);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Card Position Indicator */
+.card-position {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.position-separator {
+    margin: 0 0.4em;
+    color: var(--cream);
+    opacity: 0.6;
+}
+
+/* Keyboard Hint */
+.keyboard-hint {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--cream);
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    transition: opacity var(--transition-fast);
+}
+
+.keyboard-hint:hover {
+    opacity: 0.8;
+}
+
+kbd {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: var(--gold-light);
+}
+
+.nav-prev {
+    left: 10px;
+}
+
+.nav-next {
+    right: 10px;
+}
+
+/* ========================================
+   Card Info Section
+   ======================================== */
+
+.card-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    text-align: center;
+    flex: 1;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(
+        135deg,
+        #f5f0e6 0%,
+        #ebe4d4 25%,
+        #f5f0e6 50%,
+        #e8e0ce 75%,
+        #f5f0e6 100%
+    );
+    border-radius: 8px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.4),
+        inset 0 0 100px rgba(139, 26, 26, 0.03);
+    border: 1px solid var(--gold-dark);
+    margin-top: 50px;
+}
+
+.card-info-content {
+    transition: opacity 0.3s ease;
+}
+
+.card-info-content.fading {
+    opacity: 0;
+}
+
+/* Connector from card to description */
+.connector {
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 56px;
+    background: linear-gradient(to bottom, var(--gold), var(--gold-dark));
+}
+
+.diamond {
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    border: 1px solid var(--gold-light);
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.diamond-top {
+    top: -6px;
+}
+
+.diamond-bottom {
+    bottom: -6px;
+}
+
+.card-header {
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.card-numeral {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: var(--crimson);
+    letter-spacing: 0.1em;
+}
+
+.card-name {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: var(--black);
+}
+
+.card-theme {
+    font-family: var(--font-body);
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-style: italic;
+    color: var(--crimson);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, transparent, var(--gold-dark), var(--crimson), var(--gold-dark), transparent) 1;
+}
+
+/* ========================================
+   Tabs
+   ======================================== */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 1px solid var(--gold-dark);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--midnight-blue);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    letter-spacing: 0.05em;
+}
+
+.tab-button:hover {
+    border-color: var(--crimson);
+    color: var(--crimson);
+    background: rgba(139, 26, 26, 0.1);
+}
+
+.tab-button.active {
+    background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-light) 100%);
+    border-color: var(--gold);
+    color: var(--white);
+    box-shadow: 0 2px 10px rgba(139, 26, 26, 0.3);
+}
+
+/* ========================================
+   Tab Content
+   ======================================== */
+
+.tab-content {
+    min-height: 200px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn var(--transition-fast);
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reading-section {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.reading-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-header {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--crimson);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--spacing-sm);
+    text-align: left;
+}
+
+.summary-text,
+.interpretation-text {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.8;
+    color: var(--black);
+    text-align: left;
+}
+
+/* ========================================
+   Elements List
+   ======================================== */
+
+.elements-list {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.element-item {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    background: rgba(139, 26, 26, 0.05);
+    border-left: 3px solid var(--crimson);
+    border-radius: 0 8px 8px 0;
+    transition: all var(--transition-fast);
+}
+
+.element-item:hover {
+    background: rgba(139, 26, 26, 0.1);
+    border-left-color: var(--gold);
+}
+
+.element-name {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--crimson);
+    margin-bottom: var(--spacing-xs);
+}
+
+.element-meaning {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--black);
+    line-height: 1.8;
+}
+
+/* ========================================
+   About Section
+   ======================================== */
+
+.about {
+    max-width: 700px;
+    margin: var(--spacing-lg) auto var(--spacing-md);
+    padding: var(--spacing-lg);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.about-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+}
+
+.about-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--cream);
+    opacity: 0.85;
+    margin-bottom: var(--spacing-md);
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-text em {
+    color: var(--gold-light);
+    font-style: italic;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+    text-align: center;
+    padding: var(--spacing-md) 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 10;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-subtitle {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--cream);
+    opacity: 0.7;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-credit {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    color: var(--cream);
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+    .nav-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-prev {
+        left: 5px;
+    }
+
+    .nav-next {
+        right: 5px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .card-info {
+        padding: var(--spacing-md);
+    }
+
+    .tabs {
+        gap: var(--spacing-xs);
+    }
+
+    .tab-button {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: var(--spacing-md) 0;
+    }
+
+    .carousel-container {
+        padding: var(--spacing-md) 0;
+    }
+
+    .element-item {
+        padding: var(--spacing-sm);
+    }
+}
+
+/* ========================================
+   Touch/Swipe Support Styles
+   ======================================== */
+
+.carousel-track {
+    touch-action: pan-y;
+    user-select: none;
+    cursor: grab;
+}
+
+.carousel-track.dragging {
+    cursor: grabbing;
+}
+
+.carousel-track.dragging .carousel-card {
+    cursor: grabbing;
+}
+
+/* ========================================
+   Loading State
+   ======================================== */
+
+.carousel-card img {
+    background: var(--deep-blue);
+}
+
+.carousel-card img[src=""] {
+    background: linear-gradient(135deg, var(--deep-blue) 0%, var(--royal-blue) 100%);
+}
+

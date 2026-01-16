@@ -1,0 +1,664 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "The Magician",
+      "numeral": "I",
+      "theme": "Concentration Without Effort",
+      "summary": "The Magician represents the fundamental practice of spiritual attention—concentration without strain. This is not the tense focus of willpower, but rather the relaxed yet alert state of consciousness that arises when the mind, heart, and will unite in perfect harmony. The Magician stands as the archetype of authentic spiritual practice, demonstrating that true magic begins with mastery of one's own attention.",
+      "interpretation": "Tomberg presents this card as the gateway to all Hermetic wisdom. The Magician embodies the principle that genuine spiritual work requires a state of effortless concentration—what the Eastern traditions might call 'beginner's mind' and Christian mystics call 'recollection.' This is the foundation upon which all other arcana rest: the ability to be fully present, fully attentive, without tension or fatigue. The Magician has achieved the unity of spontaneity and deliberateness, of play and work, of the conscious and unconscious.",
+      "elements": [
+        {
+          "name": "The Lemniscate Hat",
+          "meaning": "The infinity symbol above his head represents the continuous circulation of spiritual force between the above and below, the eternal rhythm of receiving and giving that characterizes true magical work."
+        },
+        {
+          "name": "The Raised Wand",
+          "meaning": "Lifted toward heaven, this symbolizes the receptive aspect of consciousness—the active openness to inspiration and grace from the spiritual world."
+        },
+        {
+          "name": "The Table with Objects",
+          "meaning": "The four objects (cup, sword, pentacle, wand) represent the four elements and the material world upon which the Magician works. The table itself is the field of manifestation."
+        },
+        {
+          "name": "The Pointing Hand",
+          "meaning": "One hand points downward, indicating the direction of manifestation—bringing the received inspiration into concrete form. This gesture completes the circuit of magical creativity."
+        },
+        {
+          "name": "His Posture",
+          "meaning": "Standing with relaxed alertness, he demonstrates concentration without effort—the body at ease while the spirit is fully engaged."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "The High Priestess",
+      "numeral": "II",
+      "theme": "Gnosis and the Book of Memory",
+      "summary": "The High Priestess embodies sacred knowledge that cannot be taught through words alone—gnosis, the direct knowing that arises from spiritual experience. She sits before the veil of the mysteries, holding the book of cosmic memory, representing the accumulated wisdom of all spiritual traditions and the individual soul's own forgotten knowledge waiting to be remembered.",
+      "interpretation": "This arcanum explores the nature of esoteric knowledge itself. The High Priestess represents not information but transformation—knowing that changes the knower. She guards the threshold between exoteric and esoteric understanding, between the written word and its living spirit. Her teaching is silence; her book contains what can only be read by those who have developed the organs of spiritual perception. She is the soul of tradition, preserving the flame of sacred knowledge through ages of forgetting.",
+      "elements": [
+        {
+          "name": "The Closed Book",
+          "meaning": "The book on her lap represents the Akashic records, cosmic memory, and the sacred scriptures in their esoteric depth. It is closed because this knowledge reveals itself only to prepared consciousness."
+        },
+        {
+          "name": "The Veil Behind Her",
+          "meaning": "She sits before the veil of Isis, the boundary between the manifest and unmanifest, the known and the mystery. She is the guardian of this threshold."
+        },
+        {
+          "name": "The Two Pillars",
+          "meaning": "Representing duality—light and darkness, mercy and severity, the conscious and unconscious—she sits in perfect equilibrium between them."
+        },
+        {
+          "name": "The Lunar Crown",
+          "meaning": "The moon symbolizes reflected light, intuition, and the feminine receptive principle. She receives and reflects divine wisdom rather than generating it."
+        },
+        {
+          "name": "Her Blue Robe",
+          "meaning": "Blue represents the depths of spirit, tranquility, and the celestial realm. Her garments indicate her nature as a vessel for heavenly wisdom."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Empress",
+      "numeral": "III",
+      "theme": "Sacred Magic and Creative Imagination",
+      "summary": "The Empress represents the creative power of divine imagination—the ability to give birth to new realities through the marriage of will and love. She is nature in its sacred aspect, the cosmic mother who generates all forms through the magical fertility of imaginative consciousness. Her domain is the miracle of creation itself.",
+      "interpretation": "Tomberg presents the Empress as the principle of sacred magic—not manipulation of forces, but creative participation in the ongoing work of divine creation. She embodies the mystery of how the spiritual becomes material, how ideas become realities, how love generates form. Her magic is the magic of growth, of nurturing seeds into fullness. She teaches that authentic creativity requires the same loving patience that a mother gives to her child—creation cannot be forced but must be cultivated.",
+      "elements": [
+        {
+          "name": "The Scepter",
+          "meaning": "Her scepter topped with a globe represents dominion over the material world through love rather than force. It is the power of attraction rather than compulsion."
+        },
+        {
+          "name": "The Shield with Eagle",
+          "meaning": "The eagle symbolizes the soul's ability to soar to spiritual heights while remaining connected to earthly concerns. It represents the union of heaven and earth in creative work."
+        },
+        {
+          "name": "The Crown of Stars",
+          "meaning": "Twelve stars represent cosmic order, the zodiacal influences, and the crown of achieved spiritual authority that comes through creative faithfulness."
+        },
+        {
+          "name": "The Throne in Nature",
+          "meaning": "Seated amid growing things, she shows that sacred magic works with nature, not against it. Her throne is the living world itself."
+        },
+        {
+          "name": "Her Pregnancy/Fullness",
+          "meaning": "Often depicted as pregnant or full-figured, she embodies the principle of gestation—creative work requires time, patience, and nurturing care."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "The Emperor",
+      "numeral": "IV",
+      "theme": "Authority and the Mastery of Reason",
+      "summary": "The Emperor represents legitimate spiritual authority—the power that comes not from domination but from having conquered oneself. He embodies the principle of reason illuminated by faith, the ordering power of consciousness that brings chaos into harmony. His authority is the authority of one who has first learned to govern himself.",
+      "interpretation": "This arcanum addresses the mystery of true power and legitimate rule. The Emperor has earned his throne through inner victory; his sovereignty over others flows from sovereignty over himself. He represents the Hermetic principle that mastery of the microcosm (oneself) grants understanding of the macrocosm (the world). His reason is not cold logic but wisdom married to experience—the intelligence that knows when to apply rules and when to transcend them. He teaches that authority without humility becomes tyranny, and power without love becomes destruction.",
+      "elements": [
+        {
+          "name": "The Throne",
+          "meaning": "A stable seat of power representing the solid foundation of self-mastery. One cannot rule others without first establishing inner order."
+        },
+        {
+          "name": "The Crossed Legs",
+          "meaning": "This posture forms the number four, symbol of stability, manifestation, and the material world. It shows his mastery over the four elements."
+        },
+        {
+          "name": "The Scepter",
+          "meaning": "Symbol of active will and the authority to command. In his hands it represents will aligned with divine purpose."
+        },
+        {
+          "name": "The Armor",
+          "meaning": "Representing vigilance and the discipline required to maintain order. The Emperor remains ready to defend what is good and true."
+        },
+        {
+          "name": "The Eagle",
+          "meaning": "Symbol of imperial power, spiritual vision, and the ability to see the larger pattern while attending to details of governance."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "The Pope",
+      "numeral": "V",
+      "theme": "The Living Tradition and Blessing",
+      "summary": "The Pope (Hierophant) represents the principle of spiritual transmission—the living chain of tradition that carries authentic wisdom across generations. He is not merely a preserver of old forms but a living vessel through whom the eternal truths are made fresh and accessible for each new age. His blessing is the transmission of spiritual life itself.",
+      "interpretation": "Tomberg sees the Pope as the guardian of verticality—the connection between heaven and earth that gives meaning to horizontal human existence. He embodies the mystery of apostolic succession in its deepest sense: not merely institutional continuity but the unbroken transmission of spiritual awakening from master to disciple. The Pope demonstrates that true tradition is not dead repetition but living continuation, not the letter but the spirit. His raised hand blesses because he himself has been blessed; his teaching is authentic because he teaches what he has received and experienced.",
+      "elements": [
+        {
+          "name": "The Triple Crown",
+          "meaning": "The three tiers represent authority over the three worlds: physical, psychic, and spiritual. It also symbolizes the unity of the three great monotheistic traditions."
+        },
+        {
+          "name": "The Two Pillars",
+          "meaning": "Similar to the High Priestess but now manifested in the outer world—the two aspects of tradition: its outer form and inner spirit, law and grace."
+        },
+        {
+          "name": "The Two Disciples",
+          "meaning": "They represent the diversity within unity—different paths, different callings, but one source of blessing and transmission."
+        },
+        {
+          "name": "The Raised Hand",
+          "meaning": "The gesture of blessing, transmitting spiritual force. Two fingers raised represent the two natures (divine and human) united in the act of benediction."
+        },
+        {
+          "name": "The Staff with Triple Cross",
+          "meaning": "Representing authority over the three worlds and the cross (sacrifice) that is the foundation of all authentic spiritual authority."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "The Lovers",
+      "numeral": "VI",
+      "theme": "The Three Trials and Sacred Vows",
+      "summary": "The Lovers represents the crossroads of choice—the moment when the soul must decide between competing attractions and commit to a path. This arcanum addresses the trials of temptation, the nature of vows, and the mysterious alchemy by which choosing one thing fully opens rather than limits possibilities.",
+      "interpretation": "Tomberg presents this card as the mystery of sacred commitment. The young man between two women represents the soul facing the choice between different loves—earthly and heavenly, sensual and spiritual, the easy path and the demanding one. But the deeper teaching is that authentic spiritual life requires vows: chastity, poverty, and obedience—rightly understood not as repressions but as liberations. The arrow of Cupid is not mere romantic attraction but the wound of divine love that calls the soul to its true destiny. Choosing fully makes one free.",
+      "elements": [
+        {
+          "name": "The Youth",
+          "meaning": "The soul at the crossroads, representing the aspect of ourselves that must choose. His youth suggests the perpetual freshness of genuine choice."
+        },
+        {
+          "name": "The Two Women",
+          "meaning": "Often interpreted as virtue and vice, but more deeply as two legitimate goods between which one must choose. All genuine dilemmas involve choosing between goods, not between good and evil."
+        },
+        {
+          "name": "Cupid/The Angel",
+          "meaning": "The arrow of divine love that wounds the soul awake to its true calling. This is the grace that makes right choosing possible."
+        },
+        {
+          "name": "The Sun Above",
+          "meaning": "Divine presence illuminating the choice, ensuring that one who truly seeks guidance will receive it."
+        },
+        {
+          "name": "The Crossroads",
+          "meaning": "The place where paths diverge and choice becomes necessary. One cannot remain here; one must move forward."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "The Chariot",
+      "numeral": "VII",
+      "theme": "Triumph Through Trials",
+      "summary": "The Chariot represents victorious mastery achieved through conflict and trial. The charioteer has not eliminated the opposing forces within himself but has learned to hold them in dynamic tension, directing their combined energy toward spiritual purpose. This is the triumph of the integrated personality.",
+      "interpretation": "This arcanum teaches the mystery of how victory is achieved in the spiritual life. The two sphinxes or horses represent opposing tendencies—reason and emotion, assertion and receptivity, severity and mercy—that threaten to tear the soul apart. The charioteer's triumph is not suppression of either force but their harmonious direction toward a higher goal. Tomberg emphasizes that this is not static balance but dynamic equilibrium—the mastery of one who rides the storm rather than hiding from it. This is the card of the spiritual warrior who has earned the right to advance.",
+      "elements": [
+        {
+          "name": "The Charioteer",
+          "meaning": "The conscious self that has achieved mastery over the warring elements of the psyche. He stands rather than sits, indicating active vigilance."
+        },
+        {
+          "name": "The Two Sphinxes/Horses",
+          "meaning": "Opposing forces—one light, one dark—that must be guided in harmony. They represent the fundamental duality within human nature."
+        },
+        {
+          "name": "The Chariot Itself",
+          "meaning": "The vehicle of the personality through the world. It is cubic, representing stable manifestation in the material realm."
+        },
+        {
+          "name": "The Starry Canopy",
+          "meaning": "Connection to the cosmic order; the charioteer acts under the guidance of celestial wisdom, not mere personal ambition."
+        },
+        {
+          "name": "The Armor",
+          "meaning": "Spiritual protection earned through trials. The charioteer has been tested and proven."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Justice",
+      "numeral": "VIII",
+      "theme": "Karma and Moral Balance",
+      "summary": "Justice represents the universal law of cause and effect operating in the moral sphere—karma in its deepest sense. This is not blind fate but intelligent cosmic law that ensures every action generates its appropriate consequence. Justice holds both sword and scales, indicating that truth requires both discrimination and equilibrium.",
+      "interpretation": "Tomberg explores justice as the fundamental moral structure of the universe. Every thought, word, and deed creates ripples that eventually return to their source. This is neither punishment nor reward but natural consequence—as impersonal as gravity yet as intelligent as love. The arcanum teaches that genuine freedom is not escape from consequences but conscious cooperation with cosmic law. Justice is also the principle of discrimination—the sword that separates true from false, essential from accidental. One who truly understands justice learns to see the perfect fairness hidden within apparent injustice.",
+      "elements": [
+        {
+          "name": "The Scales",
+          "meaning": "Perfect equilibrium, the weighing of actions against their consequences. Every imbalance creates the conditions for its own correction."
+        },
+        {
+          "name": "The Sword",
+          "meaning": "Discrimination, the cutting away of falsehood, the decisiveness required to act justly. Truth must sometimes wound to heal."
+        },
+        {
+          "name": "The Throne",
+          "meaning": "Justice is seated, indicating permanence and stability. Cosmic law does not waver or change according to circumstances."
+        },
+        {
+          "name": "The Crown",
+          "meaning": "Authority that comes from alignment with truth. Justice has earned the right to judge because she herself is in harmony with divine law."
+        },
+        {
+          "name": "The Frontal Gaze",
+          "meaning": "Justice looks directly outward, seeing clearly without partiality. This is the objectivity required for true judgment."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "The Hermit",
+      "numeral": "IX",
+      "theme": "The Inner Light and Solitude",
+      "summary": "The Hermit represents the wisdom that can only be found in solitude—the inner light that illuminates when external lights are extinguished. He has withdrawn from the world not in rejection but in order to find what can only be found in silence. His lantern lights the way for those who come after.",
+      "interpretation": "This arcanum addresses the essential role of solitude in spiritual development. The Hermit has reached an age and stage where outer pursuits have revealed their insufficiency; he turns inward to find the source of light. Tomberg emphasizes that this is not misanthropy but the deepest service—for the Hermit's light, kindled in solitude, eventually illuminates the path for others. The staff represents the long journey, the lantern the guidance of hard-won wisdom, the cloak the withdrawal from worldly concerns. Every seeker must spend time as the Hermit, discovering the light that no external source can provide.",
+      "elements": [
+        {
+          "name": "The Lantern",
+          "meaning": "The inner light of conscience and spiritual perception. It is partially covered, revealing only what the seeker is ready to see."
+        },
+        {
+          "name": "The Staff",
+          "meaning": "The long journey of experience, the support of tradition, the vertical connection between heaven and earth that guides the solitary traveler."
+        },
+        {
+          "name": "The Cloak",
+          "meaning": "Withdrawal and protection, the concealment of inner riches from profane eyes. The Hermit's treasures are hidden."
+        },
+        {
+          "name": "His Age",
+          "meaning": "Wisdom earned through long experience. The Hermit's teaching has been tested by time and proven by life."
+        },
+        {
+          "name": "The Downward Gaze",
+          "meaning": "Attention directed to the path immediately before him—not distant speculation but practical wisdom for the next step."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "The Wheel of Fortune",
+      "numeral": "X",
+      "theme": "Destiny and the Eternal Return",
+      "summary": "The Wheel of Fortune represents the cycles of existence—the rise and fall of fortunes, the eternal return of situations and trials, the mysterious interweaving of chance and destiny. The figures rising and falling on the wheel teach the impermanence of all worldly conditions and the search for what remains stable at the hub.",
+      "interpretation": "Tomberg interprets this arcanum as the mystery of destiny versus chance. The wheel turns ceaselessly, elevating some and casting down others, yet there is an intelligence in its turnings. What appears as random fortune is actually the working out of karmic patterns too vast to comprehend. The teaching is to find the still point at the center—the consciousness that observes the turnings without being swept away by them. Those attached to the rim experience constant upheaval; those who find the hub experience peace amid change. The sphinx atop the wheel represents the riddle that must be solved: what remains constant through all change?",
+      "elements": [
+        {
+          "name": "The Wheel Itself",
+          "meaning": "The cycle of manifestation, the eternal return, the repetitive patterns of personal and cosmic history."
+        },
+        {
+          "name": "The Rising and Falling Figures",
+          "meaning": "The soul in its journey through fortune and misfortune, the impermanence of all worldly states."
+        },
+        {
+          "name": "The Sphinx",
+          "meaning": "The mystery at the heart of existence, the riddle that must be answered, the consciousness that observes the turnings."
+        },
+        {
+          "name": "The Handle/Crank",
+          "meaning": "The wheel is turned by an unseen force—destiny, karma, divine providence operating beyond human understanding."
+        },
+        {
+          "name": "The Hub",
+          "meaning": "The still center, the point of consciousness that can remain stable while circumstances revolve around it."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Strength",
+      "numeral": "XI",
+      "theme": "Gentleness and Vital Force",
+      "summary": "Strength depicts a woman gently opening a lion's mouth—not through violence but through the superior power of love and patience. This arcanum reveals that authentic strength is not forceful domination but the magical power of gentleness, the vital force that tames through understanding rather than breaking through violence.",
+      "interpretation": "Tomberg presents this as the mystery of how the higher masters the lower without destroying it. The woman does not kill the lion; she transforms its ferocity into willing cooperation. This is the strength of the saint, the mother, the true healer—the power that generates voluntary submission rather than forced compliance. The lion represents vital force, instinct, passion—energies that cannot be suppressed without great loss but can be redirected through patient love. This arcanum teaches that the spiritual life is not the destruction of nature but its elevation and consecration.",
+      "elements": [
+        {
+          "name": "The Woman",
+          "meaning": "The soul, the higher self, the feminine principle of receptive wisdom that conquers through yielding."
+        },
+        {
+          "name": "The Lion",
+          "meaning": "Vital force, instinct, the passionate nature—powerful energy that can either destroy or serve, depending on how it is approached."
+        },
+        {
+          "name": "The Gentle Touch",
+          "meaning": "The method of true mastery—not violence but patient, loving persistence that earns willing cooperation."
+        },
+        {
+          "name": "The Open Mouth",
+          "meaning": "The lion's power is not destroyed but directed—the mouth that could devour now speaks or remains peacefully open."
+        },
+        {
+          "name": "The Lemniscate",
+          "meaning": "The infinity symbol often shown above her head indicates the eternal, unlimited nature of this gentle power."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "The Hanged Man",
+      "numeral": "XII",
+      "theme": "Reversal and Sacrifice",
+      "summary": "The Hanged Man depicts a figure suspended upside-down, yet his face shows peace rather than distress. This arcanum represents the voluntary reversal of ordinary consciousness—the sacrifice of the worldly perspective to gain the spiritual one. What the world calls failure, he knows as victory.",
+      "interpretation": "This is the great mystery of inversion: the world is upside-down, and only by turning ourselves upside-down can we see it right-side-up. The Hanged Man has willingly suspended himself—this is not punishment but chosen discipline. He has sacrificed worldly ambition, conventional success, the approval of the crowd, in order to gain something invisible to worldly eyes. Tomberg emphasizes that this is the card of the mystic, the contemplative, the one who has learned that letting go brings more than grasping. His apparent helplessness is perfect freedom; his seeming defeat is actual triumph.",
+      "elements": [
+        {
+          "name": "The Inverted Posture",
+          "meaning": "The reversal of worldly values and perspectives. What seems up is down; what seems loss is gain."
+        },
+        {
+          "name": "The Bound Foot",
+          "meaning": "Voluntary limitation, the willing acceptance of constraint that leads to freedom in another dimension."
+        },
+        {
+          "name": "The Free Leg",
+          "meaning": "Crossed behind the bound leg, forming a cross or number four—even in suspension, order and structure are maintained."
+        },
+        {
+          "name": "The Peaceful Face",
+          "meaning": "Serenity in apparent adversity. The Hanged Man has found peace precisely through his reversal, not despite it."
+        },
+        {
+          "name": "The Living Wood",
+          "meaning": "Often the crossbar shows living branches—this sacrifice generates life, not death; it is fertile, not sterile."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Death",
+      "numeral": "XIII",
+      "theme": "Transformation and Renewal",
+      "summary": "Death, the nameless arcanum, represents the universal law of transformation through endings. Every new beginning requires an ending; every birth requires a death. The skeleton reaping the field clears away the old to make room for the new—this is not destruction but the necessary purification that precedes rebirth.",
+      "interpretation": "Tomberg approaches this arcanum as the mystery of necessary endings. The spiritual life requires countless deaths—death to illusions, to attachments, to outworn forms of self. The card is traditionally nameless because death is not a thing but a process, not an entity but a transition. The skeleton continues to work even after the flesh has fallen away—there is a principle of transformation that operates beyond biological death. This arcanum teaches acceptance of the endings that make new beginnings possible, and trust in the continuity that persists through all change.",
+      "elements": [
+        {
+          "name": "The Skeleton",
+          "meaning": "What remains when everything impermanent has fallen away—the essential structure, the immortal framework."
+        },
+        {
+          "name": "The Scythe",
+          "meaning": "The instrument of harvest, cutting away what is ripe. This is not random destruction but purposeful reaping."
+        },
+        {
+          "name": "The Scattered Parts",
+          "meaning": "Heads, hands, and feet scattered on the ground represent the dissolution of the integrated personality—making way for reassembly at a higher level."
+        },
+        {
+          "name": "The Black Color",
+          "meaning": "The darkness before dawn, the void that precedes creation, the necessary dissolution before renewal."
+        },
+        {
+          "name": "The Absence of a Name",
+          "meaning": "This arcanum traditionally has no name, indicating that death is not a thing but a process, not a destination but a transition."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Temperance",
+      "numeral": "XIV",
+      "theme": "The Guardian Angel and Healing",
+      "summary": "Temperance depicts an angel pouring liquid between two vessels—the eternal exchange between opposites that creates life and health. This arcanum represents the guardian angel, the principle of healing, and the continuous circulation between spiritual and material, conscious and unconscious, that maintains wholeness.",
+      "interpretation": "Tomberg sees Temperance as the mystery of the guardian angel—the spiritual being that accompanies each soul through its earthly journey. The pouring between vessels represents the constant mediation between levels of being that the angel performs, keeping the soul in contact with its spiritual source while embedded in material existence. This is also the principle of healing: disease arises from blockage; health from free flow. Temperance teaches the rhythm of exchange—giving and receiving, inspiring and expiring, ascending and descending—that characterizes all living systems.",
+      "elements": [
+        {
+          "name": "The Angel",
+          "meaning": "The guardian angel, the mediating intelligence that bridges heaven and earth for each individual soul."
+        },
+        {
+          "name": "The Two Vessels",
+          "meaning": "The spiritual and material aspects of being, consciousness and unconsciousness, the higher and lower selves."
+        },
+        {
+          "name": "The Flowing Liquid",
+          "meaning": "The vital force that must circulate freely between levels. When this flow is blocked, disease results; when free, health prevails."
+        },
+        {
+          "name": "The Wings",
+          "meaning": "The angel's connection to celestial realms, the ability to move between dimensions of existence."
+        },
+        {
+          "name": "The Balanced Posture",
+          "meaning": "Perfect equilibrium maintained through constant movement—not static balance but dynamic harmony."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "The Devil",
+      "numeral": "XV",
+      "theme": "The Mystery of Evil and Bondage",
+      "summary": "The Devil depicts a frightening figure with chained captives—yet the chains are loose, and the captives could free themselves if they chose. This arcanum represents the mystery of self-imposed bondage, the hypnotic power of evil, and the sobering truth that we are imprisoned only by our own consent.",
+      "interpretation": "Tomberg approaches this arcanum as a meditation on the nature of evil and bondage. The Devil is not an ultimate power but a parasite on perverted good. His captives remain chained because they have forgotten their freedom—the chains are loose enough to remove, but hypnotized by desire, fear, or habit, the prisoners do not try. This arcanum teaches that evil has no independent existence but is always a corruption of something originally good. Liberation begins with the recognition that we have bound ourselves and can therefore unbind ourselves. The Devil's greatest power is the illusion that escape is impossible.",
+      "elements": [
+        {
+          "name": "The Devil Figure",
+          "meaning": "The adversary, the tempter—representing not ultimate evil but the perversion of good, the corruption of legitimate desires."
+        },
+        {
+          "name": "The Chained Figures",
+          "meaning": "Souls in bondage to lower impulses. Their chains are loose—they remain bound only through ignorance or consent."
+        },
+        {
+          "name": "The Loose Chains",
+          "meaning": "The crucial detail: bondage is self-imposed and can be self-removed. Freedom is always possible."
+        },
+        {
+          "name": "The Inverted Torch",
+          "meaning": "Light directed downward—the misuse of spiritual fire for material ends, the inversion of proper hierarchy."
+        },
+        {
+          "name": "The Pedestal",
+          "meaning": "The Devil stands on a half-cube or unstable platform—his power is ultimately groundless, built on illusion."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "The Tower",
+      "numeral": "XVI",
+      "theme": "Illumination and Catastrophe",
+      "summary": "The Tower struck by lightning depicts sudden, violent destruction of what seemed permanent and secure. Yet this catastrophe is also illumination—the lightning flash reveals what was hidden, and the fall clears away structures that had become prisons. This arcanum represents the necessary destruction that precedes authentic rebuilding.",
+      "interpretation": "Tomberg interprets the Tower as the mystery of necessary destruction. Some structures—mental, emotional, institutional—become so rigid that they can only be removed through sudden catastrophe. The lightning is divine light, revelation that shatters comfortable illusions. Those who fall from the tower are being liberated, though the liberation is painful. This arcanum teaches that the security we build through ego, through rigid certainty, through identification with form, must eventually fall. The wise learn to build on rock rather than sand, but even good structures must sometimes be demolished to make way for better ones.",
+      "elements": [
+        {
+          "name": "The Lightning Bolt",
+          "meaning": "Sudden illumination from above, divine intervention that shatters human construction. Truth breaking through denial."
+        },
+        {
+          "name": "The Falling Crown",
+          "meaning": "False authority and illegitimate power being dethroned. What claimed to be supreme is revealed as limited."
+        },
+        {
+          "name": "The Falling Figures",
+          "meaning": "Ego identities in free fall, the collapse of false self-structures. Painful but ultimately liberating."
+        },
+        {
+          "name": "The Tower Itself",
+          "meaning": "Human construction reaching toward heaven—the pride that builds without proper foundation."
+        },
+        {
+          "name": "The Flames",
+          "meaning": "Purifying fire that burns away the dross. What survives the fire is proven genuine."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "The Star",
+      "numeral": "XVII",
+      "theme": "Hope and Cosmic Consciousness",
+      "summary": "The Star shows a naked woman pouring water onto earth and into a pool, beneath a sky of stars. After the destruction of the Tower comes the peace of the Star—naked truth, transparent hope, the quiet confidence that flows from connection to the eternal. This arcanum represents hope grounded in cosmic order.",
+      "interpretation": "Tomberg presents the Star as the arcanum of hope—not naive optimism but the profound confidence that comes from knowing one's place in the cosmic order. The woman is naked because she has nothing to hide; after the Tower's destruction, all pretense has fallen away. She pours water in two streams—one to earth, one to water—representing the continuous flow of grace to all levels of being. The stars above are not distant but intimate; they reveal the pattern into which each soul fits. This hope cannot be disappointed because it is not based on particular outcomes but on eternal truth.",
+      "elements": [
+        {
+          "name": "The Central Star",
+          "meaning": "The individual soul's guiding star, the personal destiny, the unique light that each being carries."
+        },
+        {
+          "name": "The Seven Surrounding Stars",
+          "meaning": "The seven planets of classical astrology, the cosmic powers that influence but do not determine human destiny."
+        },
+        {
+          "name": "The Nude Woman",
+          "meaning": "Truth without concealment, innocence recovered, the soul in its essential nature before all masks."
+        },
+        {
+          "name": "The Two Streams",
+          "meaning": "Grace flowing to both conscious and unconscious, to solid earth and flowing water—all levels receive nourishment."
+        },
+        {
+          "name": "The Bird in the Tree",
+          "meaning": "The soul at rest in its proper place, hope that has found its home."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "The Moon",
+      "numeral": "XVIII",
+      "theme": "The Depths of the Unconscious",
+      "summary": "The Moon illuminates a mysterious landscape of water, creatures emerging from depths, and towers at the edge of a path leading into darkness. This arcanum represents the unconscious mind, the realm of dream and instinct, the dangerous and necessary journey through the depths of the soul.",
+      "interpretation": "Tomberg explores the Moon as the arcanum of the unconscious—the realm of imagination, dream, memory, and instinct that lies beneath the threshold of waking awareness. The path between the towers leads into darkness, representing the spiritual journey that must pass through the unconscious. The creatures emerging from the pool are contents of the deep psyche rising toward consciousness. The Moon's light is reflected, uncertain, constantly changing—in this realm, nothing is what it seems, and the traveler must develop organs of perception suited to ambiguity. This is the perilous but necessary journey of depth psychology and mystical descent.",
+      "elements": [
+        {
+          "name": "The Moon",
+          "meaning": "Reflected light, the unconscious mind, the feminine principle, the realm of change and ambiguity."
+        },
+        {
+          "name": "The Pool",
+          "meaning": "The depths of the unconscious from which unexpected contents may emerge. The source of both creativity and danger."
+        },
+        {
+          "name": "The Crayfish",
+          "meaning": "The most primitive contents of the psyche, emerging from evolutionary depths. Instincts and patterns older than human consciousness."
+        },
+        {
+          "name": "The Dog and Wolf",
+          "meaning": "The domesticated and wild aspects of animal nature—tamed instinct and raw impulse, both affected by the Moon's influence."
+        },
+        {
+          "name": "The Two Towers",
+          "meaning": "The threshold between known and unknown, the gates through which the path leads into lunar darkness."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "The Sun",
+      "numeral": "XIX",
+      "theme": "Radiance and Recovered Innocence",
+      "summary": "The Sun shows two figures (often children) beneath a blazing sun, surrounded by sunflowers or a garden wall. After the Moon's darkness comes the Sun's full light—the clarity of direct knowing, the joy of recovered innocence, the radiance that comes from authentic spiritual achievement.",
+      "interpretation": "Tomberg presents the Sun as the arcanum of recovered innocence—not the naivete of one who has never known darkness, but the second innocence of one who has passed through darkness and emerged into light. The children represent the soul restored to its original nature, purified by the trials of the previous arcana. The sun pours down its rays without discrimination, giving freely to all—this is the generosity of the spiritually mature, who radiate blessing without calculation. The wall behind the children suggests the garden of paradise, the state of humanity before the fall—but regained through conscious effort rather than simply given.",
+      "elements": [
+        {
+          "name": "The Sun",
+          "meaning": "Divine light directly perceived, not reflected. Full consciousness, complete clarity, spiritual daylight."
+        },
+        {
+          "name": "The Two Children",
+          "meaning": "The soul reunified after the trials, recovered innocence, the divine marriage of complementary aspects of self."
+        },
+        {
+          "name": "The Sunflowers",
+          "meaning": "The soul turned toward the light, nature responding to spirit, the upward aspiration of all living things."
+        },
+        {
+          "name": "The Garden Wall",
+          "meaning": "Paradise regained, the protected space of realized spiritual attainment."
+        },
+        {
+          "name": "The Rays",
+          "meaning": "Alternating straight and wavy rays represent the two modes of divine influence: direct illumination and gentle warming."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Judgement",
+      "numeral": "XX",
+      "theme": "Resurrection and Vocation",
+      "summary": "Judgement depicts an angel sounding a trumpet while figures rise from tombs. This arcanum represents spiritual resurrection—the awakening to one's true calling, the moment when the accumulated work of all previous arcana comes to fruition in a new level of being.",
+      "interpretation": "Tomberg interprets Judgement as the mystery of resurrection and vocation. The angel's trumpet sounds the call that awakens the soul from the death-sleep of ordinary existence to awareness of its eternal identity and mission. This is not the final judgement of eschatology but the ongoing judgment that occurs whenever consciousness rises to a new level. The figures emerging from tombs represent aspects of self long buried now being integrated into a new wholeness. Judgement reveals that we are called—each of us has a specific vocation, a unique contribution to the cosmic work. The arcanum asks: will you hear the call?",
+      "elements": [
+        {
+          "name": "The Angel",
+          "meaning": "The messenger of the divine call, the voice that awakens the soul to its true identity and purpose."
+        },
+        {
+          "name": "The Trumpet",
+          "meaning": "The word or call that penetrates to the core of being and cannot be ignored once truly heard."
+        },
+        {
+          "name": "The Rising Figures",
+          "meaning": "The soul rising from the death of unconsciousness, often shown as a family—the integration of all aspects of self."
+        },
+        {
+          "name": "The Tombs",
+          "meaning": "The graves of old identities, past limitations, forgotten capabilities now being recalled and resurrected."
+        },
+        {
+          "name": "The Banner on the Trumpet",
+          "meaning": "Often showing a cross—the resurrection follows from sacrifice, the new life is born from the death of the old."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "The Fool",
+      "numeral": "0",
+      "theme": "Holy Folly and Divine Madness",
+      "summary": "The Fool wanders with his bindle and dog, seemingly unaware of the precipice before him. Yet this apparent foolishness is the highest wisdom—the freedom that comes from complete trust in divine providence, the holy madness of one who has transcended worldly prudence through spiritual achievement.",
+      "interpretation": "Tomberg crowns the journey with the mystery of holy folly. The Fool appears last (or first, or outside the sequence) because he represents both the beginning and end of wisdom. His apparent madness is freedom from the tyranny of conventional thought; his seeming recklessness is perfect trust in providence. The Fool has no fixed path because he follows moment-to-moment guidance; he appears to own nothing because he possesses everything. This is not the foolishness of ignorance but the trans-rational wisdom of the saints and sages who have passed beyond calculation. The dog at his heels represents the lower nature now playfully accompanying rather than dragging or driven.",
+      "elements": [
+        {
+          "name": "The Fool Himself",
+          "meaning": "Holy foolishness, divine madness, the wisdom beyond wisdom that appears as folly to worldly eyes."
+        },
+        {
+          "name": "The Bindle",
+          "meaning": "The sum of worldly possessions—he carries only what is essential, having let go of all else."
+        },
+        {
+          "name": "The Dog",
+          "meaning": "The lower nature, now playful companion rather than threat or master. Instinct transformed into ally."
+        },
+        {
+          "name": "The Cliff",
+          "meaning": "The apparent danger before him—yet the Fool steps forward with trust, knowing he is guided."
+        },
+        {
+          "name": "His Gaze",
+          "meaning": "Looking upward or into distance, not at his feet—trusting that the path will support him."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "The World",
+      "numeral": "XXI",
+      "theme": "Completion and Cosmic Dance",
+      "summary": "The World shows a dancing figure within a laurel wreath, surrounded by the four living creatures of Ezekiel's vision. This final arcanum represents the completion of the great work—the integration of all previous arcana into a harmonious whole, the soul dancing at the center of a redeemed cosmos.",
+      "interpretation": "Tomberg presents the World as the arcanum of completion and new beginning. The dancing figure at the center has achieved the integration of all polarities—masculine and feminine, active and receptive, transcendent and immanent. She dances because the great work has become effortless; what required straining labor now flows as spontaneous expression. The four creatures represent the four elements, the four evangelists, the four fixed signs of the zodiac—all dimensions of reality now integrated into unity. Yet this completion is not static; it is a dancing completion, endlessly creative. The World is not an ending but the doorway to new cycles at higher levels.",
+      "elements": [
+        {
+          "name": "The Dancing Figure",
+          "meaning": "The integrated soul, the completed work, the Self that has harmonized all aspects of being into creative expression."
+        },
+        {
+          "name": "The Wreath",
+          "meaning": "Victory, completion, the closed circle of accomplishment. Also, the cosmic egg, the mandorla of rebirth."
+        },
+        {
+          "name": "The Four Creatures",
+          "meaning": "The angel (Aquarius), eagle (Scorpio), lion (Leo), and bull (Taurus)—the four fixed signs representing the totality of manifest existence."
+        },
+        {
+          "name": "The Two Wands",
+          "meaning": "Active and receptive powers, now wielded in perfect balance. The dual mastery of spiritual forces."
+        },
+        {
+          "name": "The Open Space",
+          "meaning": "Despite completion, the figure is not enclosed but dances in open space—achievement does not limit but liberates."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditations on the Tarot</title>
+    <meta name="description" content="Explore the wisdom of the Major Arcana through the mystical and hermetic interpretations of Valentin Tomberg's Meditations on the Tarot.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meditations on the Tarot">
+    <meta property="og:description" content="A journey into Christian Hermeticism through the 22 Major Arcana.">
+    <meta property="og:image" content="images/the-magician.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meditations on the Tarot">
+    <meta name="twitter:description" content="A journey into Christian Hermeticism through the 22 Major Arcana.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Meditations on the Tarot</h1>
+            <p class="subtitle">A Journey into Christian Hermeticism</p>
+        </header>
+
+        <div class="carousel-container">
+            <button class="nav-button nav-prev" aria-label="Previous card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="carousel">
+                <div class="carousel-track">
+                    <!-- Cards will be injected here by JavaScript -->
+                </div>
+            </div>
+
+            <button class="nav-button nav-next" aria-label="Next card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="card-position">
+                <span class="position-current">1</span>
+                <span class="position-separator">of</span>
+                <span class="position-total">22</span>
+            </div>
+
+            <div class="keyboard-hint">
+                <span>Use</span>
+                <kbd>←</kbd>
+                <kbd>→</kbd>
+                <span>to navigate</span>
+            </div>
+        </div>
+
+        <div class="card-info">
+            <div class="connector">
+                <span class="diamond diamond-top"></span>
+                <span class="diamond diamond-bottom"></span>
+            </div>
+            <div class="card-info-content">
+                <div class="card-header">
+                    <span class="card-numeral"></span>
+                    <h2 class="card-name"></h2>
+                </div>
+                <p class="card-theme"></p>
+
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="reading">Reading</button>
+                    <button class="tab-button" data-tab="elements">Symbolism</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="reading">
+                        <div class="reading-section">
+                            <h3 class="section-header">Summary</h3>
+                            <p class="summary-text"></p>
+                        </div>
+                        <div class="reading-section">
+                            <h3 class="section-header">Interpretation</h3>
+                            <p class="interpretation-text"></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="elements">
+                        <div class="elements-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="about">
+            <h2 class="about-title">About This Work</h2>
+            <p class="about-text">
+                <em>Meditations on the Tarot: A Journey into Christian Hermeticism</em> is a profound spiritual work
+                written anonymously and published posthumously in 1980. Later revealed to be the work of Valentin Tomberg,
+                the book presents the 22 Major Arcana of the Tarot as symbolic keys to Christian mysticism, Hermeticism,
+                and the perennial philosophy.
+            </p>
+            <p class="about-text">
+                Each card serves as a meditation on archetypal spiritual truths, weaving together insights from
+                Catholic mysticism, Kabbalah, alchemy, and depth psychology. The work invites contemplative
+                engagement rather than mere intellectual study, treating the Tarot as a tool for spiritual awakening
+                and inner transformation.
+            </p>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-title">Meditations on the Tarot</p>
+            <p class="footer-subtitle">A Journey into Christian Hermeticism</p>
+            <p class="footer-credit">Based on the work of Valentin Tomberg</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
