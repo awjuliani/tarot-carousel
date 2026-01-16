@@ -569,6 +569,7 @@ body::after {
     visibility: hidden;
     transition: opacity var(--transition-medium), visibility var(--transition-medium);
     padding: var(--spacing-md);
+    overflow-y: auto;
 }
 
 .modal-overlay.active {
@@ -593,10 +594,13 @@ body::after {
         inset 0 0 100px rgba(139, 26, 26, 0.03);
     max-width: 600px;
     width: 100%;
+    max-height: calc(100vh - var(--spacing-lg));
+    overflow-y: auto;
     padding: var(--spacing-xl);
     position: relative;
     transform: translateY(20px) scale(0.95);
     transition: transform var(--transition-medium);
+    margin: auto;
 }
 
 .modal-overlay.active .modal {
@@ -819,6 +823,41 @@ body::after {
 
     .element-item {
         padding: var(--spacing-sm);
+    }
+
+    /* Modal mobile styles */
+    .modal-overlay {
+        padding: var(--spacing-sm);
+    }
+
+    .modal {
+        padding: var(--spacing-md);
+        max-height: calc(100vh - var(--spacing-md));
+        border-radius: 8px;
+    }
+
+    .modal-header {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .modal-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-text {
+        font-size: 1.1rem;
+    }
+
+    .modal-close {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        width: 32px;
+        height: 32px;
+    }
+
+    .modal-close svg {
+        width: 16px;
+        height: 16px;
     }
 }
 
