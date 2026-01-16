@@ -450,4 +450,50 @@ class TarotCarousel {
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     new TarotCarousel();
+    initAboutModal();
 });
+
+// About Modal functionality
+function initAboutModal() {
+    const modal = document.getElementById('aboutModal');
+    const closeBtn = modal.querySelector('.modal-close');
+    const enterBtn = modal.querySelector('.modal-enter-button');
+    const aboutBtn = document.querySelector('.about-button');
+
+    // Show modal on first visit
+    if (!localStorage.getItem('tarotCarouselVisited')) {
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 500);
+    }
+
+    // Close modal function
+    function closeModal() {
+        modal.classList.remove('active');
+        localStorage.setItem('tarotCarouselVisited', 'true');
+    }
+
+    // Open modal function
+    function openModal() {
+        modal.classList.add('active');
+    }
+
+    // Event listeners
+    closeBtn.addEventListener('click', closeModal);
+    enterBtn.addEventListener('click', closeModal);
+    aboutBtn.addEventListener('click', openModal);
+
+    // Close on overlay click (but not modal content)
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+}

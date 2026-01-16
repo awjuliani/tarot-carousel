@@ -95,27 +95,44 @@
             </div>
         </div>
 
-        <section class="about">
-            <h2 class="about-title">About This Work</h2>
-            <p class="about-text">
-                <em>Meditations on the Tarot: A Journey into Christian Hermeticism</em> is a profound spiritual work
-                written anonymously and published posthumously in 1980. Later revealed to be the work of Valentin Tomberg,
-                the book presents the 22 Major Arcana of the Tarot as symbolic keys to Christian mysticism, Hermeticism,
-                and the perennial philosophy.
-            </p>
-            <p class="about-text">
-                Each card serves as a meditation on archetypal spiritual truths, weaving together insights from
-                Catholic mysticism, Kabbalah, alchemy, and depth psychology. The work invites contemplative
-                engagement rather than mere intellectual study, treating the Tarot as a tool for spiritual awakening
-                and inner transformation.
-            </p>
-        </section>
-
         <footer class="footer">
             <p class="footer-title">Meditations on the Tarot</p>
             <p class="footer-subtitle">A Journey into Christian Hermeticism</p>
+            <button class="about-button">About This Work</button>
             <p class="footer-credit">Based on the work of Valentin Tomberg</p>
         </footer>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-diamond"></div>
+                <h2 class="modal-title">About This Work</h2>
+                <div class="modal-diamond"></div>
+            </div>
+            <div class="modal-content">
+                <p class="modal-text">
+                    <em>Meditations on the Tarot: A Journey into Christian Hermeticism</em> is a profound spiritual work
+                    written anonymously and published posthumously in 1980. Later revealed to be the work of Valentin Tomberg,
+                    the book presents the 22 Major Arcana of the Tarot as symbolic keys to Christian mysticism, Hermeticism,
+                    and the perennial philosophy.
+                </p>
+                <p class="modal-text">
+                    Each card serves as a meditation on archetypal spiritual truths, weaving together insights from
+                    Catholic mysticism, Kabbalah, alchemy, and depth psychology. The work invites contemplative
+                    engagement rather than mere intellectual study, treating the Tarot as a tool for spiritual awakening
+                    and inner transformation.
+                </p>
+            </div>
+            <button class="modal-enter-button">Enter</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
