@@ -312,36 +312,6 @@ body::after {
     opacity: 0.6;
 }
 
-/* Keyboard Hint */
-.keyboard-hint {
-    position: absolute;
-    top: 5px;
-    right: 30px;
-    font-family: var(--font-ui);
-    font-size: 0.75rem;
-    color: var(--cream);
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    gap: 0.4em;
-    transition: opacity var(--transition-fast);
-}
-
-.keyboard-hint:hover {
-    opacity: 0.8;
-}
-
-kbd {
-    display: inline-block;
-    padding: 0.2em 0.5em;
-    font-family: var(--font-ui);
-    font-size: 0.75rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    color: var(--gold-light);
-}
-
 .nav-prev {
     left: 10px;
 }
@@ -535,6 +505,7 @@ kbd {
 .interpretation-text {
     font-family: var(--font-body);
     font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 500;
     line-height: 1.8;
     color: var(--black);
     text-align: left;
@@ -574,6 +545,7 @@ kbd {
 .element-meaning {
     font-family: var(--font-body);
     font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 500;
     color: var(--black);
     line-height: 1.8;
 }
