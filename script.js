@@ -271,6 +271,7 @@ class TarotCarousel {
     handleMouseDown(e) {
         e.preventDefault();
         this.mouseStartX = e.clientX;
+        this.mouseEndX = e.clientX;
         this.isMouseDragging = true;
         this.track.classList.add('dragging');
     }
@@ -289,10 +290,26 @@ class TarotCarousel {
         const diff = this.mouseStartX - this.mouseEndX;
         const threshold = 50;
 
-        if (diff > threshold) {
-            this.navigate(1);
-        } else if (diff < -threshold) {
-            this.navigate(-1);
+        if (Math.abs(diff) > threshold) {
+            // It's a drag/swipe
+            if (diff > threshold) {
+                this.navigate(1);
+            } else if (diff < -threshold) {
+                this.navigate(-1);
+            }
+        } else {
+            // It's a click - check if left or right of center
+            const carouselRect = this.track.getBoundingClientRect();
+            const centerX = carouselRect.left + carouselRect.width / 2;
+
+            if (e.clientX < centerX - 50) {
+                // Clicked on the left side
+                this.navigate(-1);
+            } else if (e.clientX > centerX + 50) {
+                // Clicked on the right side
+                this.navigate(1);
+            }
+            // If clicked near center (within 50px), do nothing (it's the active card)
         }
 
         this.mouseStartX = 0;
