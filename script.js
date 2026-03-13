@@ -25,9 +25,16 @@ class TarotCarousel {
     }
 
     async init() {
+        this.currentView = 'carousel';
+        this.gridView = document.querySelector('.grid-view');
+        this.carouselContainer = document.querySelector('.carousel-container');
+        this.cardInfo = document.querySelector('.card-info');
+
         await this.loadCards();
         this.renderCarousel();
+        this.renderGrid();
         this.bindEvents();
+        this.bindViewToggle();
         this.handleHashNavigation();
         this.updateDisplay();
         this.updatePositionIndicator();
@@ -428,6 +435,68 @@ class TarotCarousel {
         const card = this.cards[this.currentIndex];
         const slug = this.getSlug(card.name);
         history.replaceState(null, null, `#${slug}`);
+    }
+
+    renderGrid() {
+        this.gridView.innerHTML = '';
+        this.cards.forEach((card, index) => {
+            const gridCard = document.createElement('div');
+            gridCard.className = 'grid-card';
+            gridCard.dataset.index = index;
+
+            const img = document.createElement('img');
+            img.src = `images/${this.getImageFilename(card)}`;
+            img.alt = card.name;
+            img.loading = 'lazy';
+            img.onerror = () => { img.src = this.createPlaceholderImage(card); };
+
+            const label = document.createElement('div');
+            label.className = 'grid-card-label';
+            label.innerHTML = `
+                <span class="grid-card-numeral">${card.numeral}</span>
+                <span class="grid-card-name">${card.name}</span>
+            `;
+
+            gridCard.appendChild(img);
+            gridCard.appendChild(label);
+            this.gridView.appendChild(gridCard);
+
+            gridCard.addEventListener('click', () => {
+                this.switchView('carousel', index);
+            });
+        });
+    }
+
+    bindViewToggle() {
+        document.querySelectorAll('.toggle-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.switchView(btn.dataset.view);
+            });
+        });
+    }
+
+    switchView(view, cardIndex) {
+        if (view === this.currentView && cardIndex === undefined) return;
+        this.currentView = view;
+
+        // Update toggle buttons
+        document.querySelectorAll('.toggle-button').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.view === view);
+        });
+
+        if (view === 'grid') {
+            this.carouselContainer.style.display = 'none';
+            this.cardInfo.style.display = 'none';
+            this.gridView.style.display = 'grid';
+        } else {
+            this.gridView.style.display = 'none';
+            this.carouselContainer.style.display = 'flex';
+            this.cardInfo.style.display = 'block';
+
+            if (cardIndex !== undefined) {
+                this.goToCard(cardIndex);
+            }
+        }
     }
 
     preloadAdjacentImages() {

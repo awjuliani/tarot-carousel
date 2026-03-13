@@ -33,6 +33,28 @@
             <p class="subtitle">A Journey into Christian Hermeticism</p>
         </header>
 
+        <div class="view-toggle">
+            <button class="toggle-button active" data-view="carousel" aria-label="Carousel view">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="6" width="6" height="12" rx="1"></rect>
+                    <rect x="9" y="4" width="6" height="16" rx="1"></rect>
+                    <rect x="16" y="6" width="6" height="12" rx="1"></rect>
+                </svg>
+            </button>
+            <button class="toggle-button" data-view="grid" aria-label="Grid view">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                    <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                    <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                    <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+                </svg>
+            </button>
+        </div>
+
+        <div class="grid-view" style="display: none;">
+            <!-- Grid cards will be injected here by JavaScript -->
+        </div>
+
         <div class="carousel-container">
             <button class="nav-button nav-prev" aria-label="Previous card">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

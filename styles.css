@@ -111,7 +111,7 @@ body::after {
     z-index: 10;
     max-width: 1400px;
     margin: 0 auto;
-    padding: var(--spacing-md);
+    padding: var(--spacing-xs) var(--spacing-md) var(--spacing-md);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -151,6 +151,139 @@ body::after {
     color: var(--gold-light);
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+/* ========================================
+   View Toggle
+   ======================================== */
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    position: relative;
+    z-index: 10;
+}
+
+.toggle-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.toggle-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.toggle-button:hover {
+    opacity: 1;
+    border-color: var(--gold);
+}
+
+.toggle-button.active {
+    opacity: 1;
+    background: rgba(212, 175, 55, 0.15);
+    border-color: var(--gold);
+}
+
+/* ========================================
+   Grid View
+   ======================================== */
+
+.grid-view {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--spacing-md);
+    animation: fadeIn var(--transition-medium);
+}
+
+.grid-card {
+    cursor: pointer;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--gold-dark);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.grid-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: var(--gold);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+.grid-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-lg) var(--spacing-xs) var(--spacing-xs);
+    background: linear-gradient(to top, rgba(10, 22, 40, 0.95) 0%, rgba(10, 22, 40, 0.7) 60%, transparent 100%);
+    text-align: center;
+}
+
+.grid-card-numeral {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.grid-card-name {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    color: var(--cream);
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xs);
+        padding: var(--spacing-sm);
+    }
+
+    .grid-card-label {
+        padding: var(--spacing-sm) 2px 2px;
+    }
+
+    .grid-card-numeral,
+    .grid-card-name {
+        font-size: 0.65rem;
+    }
 }
 
 /* ========================================
