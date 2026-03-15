@@ -100,29 +100,29 @@ class TarotCarousel {
 
         // Background gradient
         const gradient = ctx.createLinearGradient(0, 0, 0, 380);
-        gradient.addColorStop(0, '#1a3a5c');
-        gradient.addColorStop(1, '#0f2847');
+        gradient.addColorStop(0, '#252e3a');
+        gradient.addColorStop(1, '#1a2030');
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, 220, 380);
 
         // Border
-        ctx.strokeStyle = '#d4af37';
+        ctx.strokeStyle = '#d4a930';
         ctx.lineWidth = 4;
         ctx.strokeRect(6, 6, 208, 368);
 
         // Inner border
-        ctx.strokeStyle = 'rgba(212, 175, 55, 0.3)';
+        ctx.strokeStyle = 'rgba(212, 169, 48, 0.3)';
         ctx.lineWidth = 1;
         ctx.strokeRect(15, 15, 190, 350);
 
         // Numeral
-        ctx.fillStyle = '#d4af37';
+        ctx.fillStyle = '#d4a930';
         ctx.font = '24px Cinzel, serif';
         ctx.textAlign = 'center';
         ctx.fillText(card.numeral, 110, 50);
 
         // Card name
-        ctx.fillStyle = '#f5f0e6';
+        ctx.fillStyle = '#f0e4c8';
         ctx.font = '18px Cinzel, serif';
 
         // Word wrap the name
@@ -144,7 +144,7 @@ class TarotCarousel {
         ctx.fillText(line.trim(), 110, y);
 
         // Decorative elements
-        ctx.strokeStyle = '#d4af37';
+        ctx.strokeStyle = '#d4a930';
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(60, 220);

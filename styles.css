@@ -3,18 +3,22 @@
    ======================================== */
 
 :root {
-    /* Color Palette */
-    --midnight-blue: #0a1628;
-    --deep-blue: #0f2847;
-    --royal-blue: #1a3a5c;
-    --gold: #d4af37;
-    --gold-light: #e8c874;
-    --gold-dark: #b8962e;
-    --crimson: #8b1a1a;
-    --crimson-light: #a62c2c;
-    --cream: #f5f0e6;
-    --white: #ffffff;
-    --black: #000000;
+    /* Color Palette - Marseille Tarot */
+    --midnight-blue: #141820;
+    --deep-blue: #1a2030;
+    --royal-blue: #252e3a;
+    --gold: #d4a930;
+    --gold-light: #e2be5a;
+    --gold-dark: #b8922a;
+    --crimson: #c83228;
+    --crimson-light: #d94a3f;
+    --cream: #f0e4c8;
+    --white: #faf6ee;
+    --black: #2a2518;
+    --marseille-green: #2d7250;
+    --marseille-green-light: #3a8d64;
+    --marseille-blue: #2e6099;
+    --marseille-blue-light: #3d7ab8;
 
     /* Typography */
     --font-display: 'Cinzel', serif;
@@ -73,13 +77,13 @@ body::before {
     bottom: 0;
     background-image:
         radial-gradient(1px 1px at 20px 30px, var(--gold), transparent),
-        radial-gradient(1px 1px at 40px 70px, var(--cream), transparent),
-        radial-gradient(1px 1px at 50px 160px, var(--gold), transparent),
+        radial-gradient(1px 1px at 40px 70px, var(--crimson), transparent),
+        radial-gradient(1px 1px at 50px 160px, var(--marseille-blue), transparent),
         radial-gradient(1px 1px at 90px 40px, var(--cream), transparent),
         radial-gradient(1px 1px at 130px 80px, var(--gold), transparent),
-        radial-gradient(1px 1px at 160px 120px, var(--cream), transparent),
-        radial-gradient(1px 1px at 200px 50px, var(--gold), transparent),
-        radial-gradient(1px 1px at 250px 90px, var(--cream), transparent),
+        radial-gradient(1px 1px at 160px 120px, var(--marseille-green), transparent),
+        radial-gradient(1px 1px at 200px 50px, var(--crimson), transparent),
+        radial-gradient(1px 1px at 250px 90px, var(--marseille-blue), transparent),
         radial-gradient(1px 1px at 300px 140px, var(--gold), transparent);
     background-size: 350px 200px;
     opacity: 0.3;
@@ -140,7 +144,7 @@ body::after {
     display: block;
     width: 200px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--crimson), var(--gold), var(--crimson), transparent);
+    background: linear-gradient(90deg, transparent, var(--marseille-green), var(--gold), var(--crimson), transparent);
     margin: var(--spacing-sm) auto 0;
 }
 
@@ -168,7 +172,7 @@ body::after {
 .toggle-button {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(212, 175, 55, 0.4);
+    border: 1px solid rgba(212, 169, 48, 0.4);
     border-radius: 8px;
     background: transparent;
     color: var(--gold);
@@ -192,7 +196,7 @@ body::after {
 
 .toggle-button.active {
     opacity: 1;
-    background: rgba(212, 175, 55, 0.15);
+    background: rgba(212, 169, 48, 0.15);
     border-color: var(--gold);
 }
 
@@ -227,7 +231,7 @@ body::after {
     border-color: var(--gold);
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.5),
-        0 0 30px rgba(212, 175, 55, 0.2);
+        0 0 30px rgba(212, 169, 48, 0.2);
 }
 
 .grid-card img {
@@ -242,7 +246,7 @@ body::after {
     left: 0;
     right: 0;
     padding: var(--spacing-lg) var(--spacing-xs) var(--spacing-xs);
-    background: linear-gradient(to top, rgba(10, 22, 40, 0.95) 0%, rgba(10, 22, 40, 0.7) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(20, 24, 32, 0.95) 0%, rgba(20, 24, 32, 0.7) 60%, transparent 100%);
     text-align: center;
 }
 
@@ -367,12 +371,12 @@ body::after {
     box-shadow:
         0 30px 60px rgba(0, 0, 0, 0.6),
         0 15px 30px rgba(0, 0, 0, 0.4),
-        0 0 50px rgba(212, 175, 55, 0.3),
-        0 0 80px rgba(139, 26, 26, 0.2);
+        0 0 50px rgba(212, 169, 48, 0.3),
+        0 0 80px rgba(200, 50, 40, 0.15);
 }
 
 .carousel-card:hover:not(.active) img {
-    border-color: var(--crimson-light);
+    border-color: var(--marseille-green-light);
 }
 
 /* Reflection effect */
@@ -385,7 +389,7 @@ body::after {
     height: 60%;
     background: linear-gradient(
         to bottom,
-        rgba(212, 175, 55, 0.1) 0%,
+        rgba(212, 169, 48, 0.1) 0%,
         transparent 50%
     );
     transform: scaleY(-1) translateY(-10px);
@@ -467,16 +471,16 @@ body::after {
     z-index: 10;
     background: linear-gradient(
         135deg,
-        #f5f0e6 0%,
-        #ebe4d4 25%,
-        #f5f0e6 50%,
-        #e8e0ce 75%,
-        #f5f0e6 100%
+        #f0e4c8 0%,
+        #e8dabb 25%,
+        #f0e4c8 50%,
+        #e4d6b2 75%,
+        #f0e4c8 100%
     );
     border-radius: 8px;
     box-shadow:
         0 10px 40px rgba(0, 0, 0, 0.4),
-        inset 0 0 100px rgba(139, 26, 26, 0.03);
+        inset 0 0 100px rgba(200, 50, 40, 0.03);
     border: 1px solid var(--gold-dark);
     margin-top: 50px;
 }
@@ -497,7 +501,7 @@ body::after {
     transform: translateX(-50%);
     width: 2px;
     height: 56px;
-    background: linear-gradient(to bottom, var(--gold), var(--gold-dark));
+    background: linear-gradient(to bottom, var(--marseille-blue), var(--gold-dark));
 }
 
 .diamond {
@@ -508,7 +512,7 @@ body::after {
     background: var(--gold);
     border: 1px solid var(--gold-light);
     transform: translateX(-50%) rotate(45deg);
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(212, 169, 48, 0.5);
 }
 
 .diamond-top {
@@ -550,7 +554,7 @@ body::after {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
     border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, transparent, var(--gold-dark), var(--crimson), var(--gold-dark), transparent) 1;
+    border-image: linear-gradient(90deg, transparent, var(--gold-dark), var(--gold), var(--gold-dark), transparent) 1;
 }
 
 /* ========================================
@@ -570,26 +574,26 @@ body::after {
     font-size: 0.9rem;
     font-weight: 500;
     padding: var(--spacing-xs) var(--spacing-md);
-    border: 1px solid var(--gold-dark);
+    border: 1px solid var(--marseille-green);
     border-radius: 25px;
     background: transparent;
-    color: var(--midnight-blue);
+    color: var(--marseille-green);
     cursor: pointer;
     transition: all var(--transition-fast);
     letter-spacing: 0.05em;
 }
 
 .tab-button:hover {
-    border-color: var(--crimson);
-    color: var(--crimson);
-    background: rgba(139, 26, 26, 0.1);
+    border-color: var(--marseille-green-light);
+    color: var(--marseille-green-light);
+    background: rgba(45, 114, 80, 0.1);
 }
 
 .tab-button.active {
-    background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-light) 100%);
+    background: linear-gradient(135deg, var(--marseille-green) 0%, var(--marseille-green-light) 100%);
     border-color: var(--gold);
     color: var(--white);
-    box-shadow: 0 2px 10px rgba(139, 26, 26, 0.3);
+    box-shadow: 0 2px 10px rgba(45, 114, 80, 0.3);
 }
 
 /* ========================================
@@ -627,7 +631,7 @@ body::after {
     font-family: var(--font-display);
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--crimson);
+    color: var(--marseille-green);
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin-bottom: var(--spacing-sm);
@@ -657,21 +661,21 @@ body::after {
 .element-item {
     padding: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
-    background: rgba(139, 26, 26, 0.05);
-    border-left: 3px solid var(--crimson);
+    background: rgba(45, 114, 80, 0.06);
+    border-left: 3px solid var(--marseille-green);
     border-radius: 0 8px 8px 0;
     transition: all var(--transition-fast);
 }
 
 .element-item:hover {
-    background: rgba(139, 26, 26, 0.1);
+    background: rgba(45, 114, 80, 0.12);
     border-left-color: var(--gold);
 }
 
 .element-name {
     font-family: var(--font-display);
     font-size: 1.1rem;
-    color: var(--crimson);
+    color: var(--marseille-green);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -693,7 +697,7 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(10, 22, 40, 0.95);
+    background: rgba(20, 24, 32, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -713,18 +717,18 @@ body::after {
 .modal {
     background: linear-gradient(
         135deg,
-        #f5f0e6 0%,
-        #ebe4d4 25%,
-        #f5f0e6 50%,
-        #e8e0ce 75%,
-        #f5f0e6 100%
+        #f0e4c8 0%,
+        #e8dabb 25%,
+        #f0e4c8 50%,
+        #e4d6b2 75%,
+        #f0e4c8 100%
     );
     border-radius: 12px;
     border: 2px solid var(--gold);
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.5),
-        0 0 80px rgba(212, 175, 55, 0.2),
-        inset 0 0 100px rgba(139, 26, 26, 0.03);
+        0 0 80px rgba(212, 169, 48, 0.2),
+        inset 0 0 100px rgba(200, 50, 40, 0.03);
     max-width: 600px;
     width: 100%;
     max-height: calc(100vh - var(--spacing-lg));
@@ -781,7 +785,7 @@ body::after {
     height: 10px;
     background: var(--gold);
     transform: rotate(45deg);
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(212, 169, 48, 0.5);
 }
 
 .modal-title {
@@ -833,13 +837,13 @@ body::after {
     color: var(--white);
     cursor: pointer;
     transition: all var(--transition-fast);
-    box-shadow: 0 4px 15px rgba(139, 26, 26, 0.3);
+    box-shadow: 0 4px 15px rgba(200, 50, 40, 0.3);
 }
 
 .modal-enter-button:hover {
     background: linear-gradient(135deg, var(--crimson-light) 0%, var(--crimson) 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(139, 26, 26, 0.4);
+    box-shadow: 0 6px 20px rgba(200, 50, 40, 0.4);
 }
 
 /* About Button in Footer */
@@ -850,7 +854,7 @@ body::after {
     letter-spacing: 0.1em;
     padding: var(--spacing-xs) var(--spacing-md);
     background: transparent;
-    border: 1px solid var(--gold-dark);
+    border: 1px solid rgba(212, 169, 48, 0.4);
     border-radius: 20px;
     color: var(--gold);
     cursor: pointer;
@@ -873,7 +877,7 @@ body::after {
     margin-top: var(--spacing-xl);
     position: relative;
     z-index: 10;
-    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    border-top: 1px solid rgba(46, 96, 153, 0.3);
 }
 
 .footer-title {
